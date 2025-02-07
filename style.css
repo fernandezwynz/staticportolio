@@ -1,0 +1,354 @@
+/* Global Styles */
+body {
+    background-color: #080808; /* Main background color */
+    color: white; /* Text color */
+    font-family: 'Montserrat', sans-serif; /* Font family */
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden; /* Hide horizontal overflow */
+}
+
+/* Main color for accents */
+.main-color {
+    color: #00ffee; /* Main color */
+}
+
+/* Navbar Styles */
+.navbar {
+    padding: 15px 20px; /* Add padding to the navbar */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Optional shadow */
+    background-color: white; /* Navbar background color */
+}
+
+#brand {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.8rem;
+    color: #00ffee;
+    font-weight: bold;
+}
+
+.navbar-nav .nav-link {
+    color: black; /* Set default color for links */
+    font-size: 1rem;
+    padding: 10px 15px;
+}
+
+.navbar-nav .nav-link:hover {
+    color: #00ffee; /* Highlight color on hover */
+}
+
+.navbar-toggler {
+    border-color: #00ffee; /* Customize the border of the toggle button */
+}
+
+.navbar-toggler-icon {
+    background-color: #00ffee; /* Customize the hamburger icon color */
+}
+
+/* Mobile and Tablet View - Navbar adjustments */
+@media (max-width: 768px) {
+    .navbar-nav {
+        text-align: center; /* Center the links */
+    }
+
+    .navbar-nav .nav-item {
+        padding: 10px 0; /* Add space between the items */
+    }
+
+    .navbar-nav .nav-link {
+        font-size: 1.2rem;
+        color: black;
+    }
+
+    .navbar-brand {
+        font-size: 1.5rem;
+        color: #00ffee; /* Adjust size and color for mobile */
+    }
+}
+
+/* Navbar behavior when scrolling */
+body {
+    padding-top: 100px; /* Ensure the content doesn't hide behind the navbar */
+}
+
+/* Section Styles (Home, Projects, Tools, Contact) */
+#landing, #projects, #tools, #contact, footer {
+    background-color: #080808; /* Default background color */
+    padding: 60px 0;
+}
+
+#experience, #skills {
+    background-color: #080808; /* Black background for Experience and Skills */
+    padding: 60px 0;
+    
+}
+
+#landing, #tools, #footer {
+    background-color: #131313; /* Second background color for alternate sections */
+}
+
+h1,h2 {
+    color: #00ffee; /* Main color for titles */
+}
+
+h3,h4 {
+    color: #00ffee;
+}
+
+/* Text alignment for sections */
+.text-center {
+    text-align: center;
+}
+
+.text-md-left {
+    text-align: left;
+}
+
+/* Card Styles (for projects) */
+.card {
+    background-color: #131313; /* Second background color */
+    border: none;
+    color: white;
+}
+
+.card-body {
+    padding: 20px;
+}
+
+.card-title {
+    color: black; /* Main color for card titles */
+}
+
+/* Ensuring cards have equal height */
+.card.h-100 {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.card-text {
+    color: black;
+    flex-grow: 1;
+}
+
+/* Footer Styling */
+footer {
+    background-color: #131313;
+    color: white;
+}
+
+footer h6, footer p {
+    margin: 0;
+}
+
+/* Social Media Icon Styles */
+footer i {
+    color: white; /* Changed to white */
+    transition: color 0.3s ease;
+}
+
+footer i:hover {
+    color: #00ffee; /* Highlight icons on hover */
+}
+
+/* Message Us Form */
+.form-group {
+    margin-bottom: 1rem;
+}
+
+input, textarea {
+    background-color: #131313;
+    border: 1px solid #00ffee;
+    color: white;
+}
+
+button {
+    background-color: #00ffee;
+    border: none;
+    color: black;
+}
+
+button:hover {
+    background-color: white;
+    color: #00ffee;
+}
+
+#home {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 50px;
+    background-color: #080808; /* Ensure the section matches the dark background theme */
+    color: white;
+    flex-wrap: wrap; /* Ensures content wraps on smaller screens */
+}
+
+.home-content {
+    flex: 1;
+    max-width: 50%;
+}
+
+.home-content h1 {
+    font-size: 4rem; /* Adjust the size of your name */
+}
+
+.home-content h2 {
+    font-size: 2rem; /* Adjust the size of the subtitle */
+}
+
+.home-content p {
+    font-size: 1.3rem; /* Smaller font size for the paragraph */
+    line-height: 1.6;
+    max-width: 500px;
+}
+
+.home-img {
+    flex: .4;
+    text-align: right;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.home-img img {
+    max-width: 100%; /* Ensure the image is responsive */
+    border-radius: 50%; /* Optional: to give the image a circular shape */
+    padding: 2rem;
+}
+
+@media (max-width: 768px) {
+    #home {
+        padding: 20px;
+        flex-direction: column; /* Stack the content vertically on smaller screens */
+        text-align: center; /* Center align text on smaller screens */
+    }
+
+    .home-content {
+        max-width: 100%;
+        margin-bottom: 20px; /* Space between the text and image */
+    }
+
+    .home-img {
+        max-width: 100%;
+        display: flex;
+        justify-content: center; /* Center image on smaller screens */
+    }
+
+    .home-content h1 {
+        font-size: 2.5rem; /* Adjust heading size for smaller screens */
+    }
+
+    .home-content h2 {
+        font-size: 2rem; /* Adjust subtitle size for smaller screens */
+    }
+
+    .home-content p {
+        font-size: 0.9rem; /* Slightly smaller paragraph text */
+        max-width: 100%;
+    }
+}
+
+@media (max-width: 480px) {
+    .home-content h1 {
+        font-size: 2rem; /* Smaller heading for very small screens */
+    }
+
+    .home-content h2 {
+        font-size: 1.8rem; /* Smaller subtitle */
+    }
+
+    .home-content p {
+        font-size: 0.8rem; /* Even smaller paragraph text */
+    }
+}
+
+
+section {
+    min-height: 100vh;
+    padding: 10rem 12% 10rem;
+    background-color: black;
+    color: white;
+}
+
+.text-animation {
+    font-size: 34px;
+    font-weight: 600;
+    min-width: 280px;
+}
+
+.text-animation span {
+    position: relative;
+    color: white; /* Ensure text is white */
+}
+
+.text-animation span::before {
+    content: "Web Developer";
+    color: var(--main-color);
+    animation: words 20s infinite;
+}
+
+.text-animation span::after {
+    content: "";
+    background-color: #080808;
+    position: absolute;
+    width: calc(100% + 8px);
+    height: 100%;
+    border-left: 3px solid white;
+    right: -8px;
+    animation: cursor 0.6s infinite, typing 20s steps(14) infinite;
+}
+
+@keyframes cursor {
+    to {
+        border-left: 2px solid white;
+    }
+}
+
+@keyframes words {
+    0%, 20% {
+        content: "System Engineer";
+    }
+    21%, 40% {
+        content: "Full Stack Developer";
+    }
+    41%, 60% {
+        content: "Cloud Engineer";
+    }
+    61%, 80% {
+        content: "Software Tester";
+    }
+    81%, 100% {
+        content: "Support Engineer";
+    }
+}
+
+@keyframes typing {
+    10%, 15%, 30%, 35%, 50%, 55%, 70%, 75%, 90%, 95% {
+        width: 0;
+    }
+    5%, 20%, 25%, 40%, 45%, 60%, 65%, 80%, 85% {
+        width: calc(100% + 8px);
+    }
+}
+
+/* Black background for specific sections */
+#mern, #tools {
+    background-color: black; /* Set background color to black */
+}
+
+/* Light/White send button */
+button.send-btn {
+    background-color: white;
+    color: black;
+    border: 1px solid #00ffee;
+    padding: 10px 20px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button.send-btn:hover {
+    background-color: #00ffee;
+    color: white;
+}
+
+
+
